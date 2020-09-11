@@ -4,6 +4,7 @@ import os
 from IPython.display import clear_output
 import pandas as pd
 import numpy as np
+from os import system
 
 # Load in files
 fileurl = 'https://raw.githubusercontent.com/artusoma/collab_gathering/master/small_stats.csv'
@@ -57,7 +58,7 @@ def present_words(words1, words2, key):
         print('word 1' + '         ' + 'word 2')
         print(w1 + '          ' + w2 )
         a = input()
-        clear_output(wait=False)
+        system('clear')
 
         if a == 'exit':
             # Create final dataframe
